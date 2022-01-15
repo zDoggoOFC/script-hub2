@@ -1,0 +1,102 @@
+local DiscordLib =
+    loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
+
+local win = DiscordLib:Window("Script Hub")
+
+local serv = win:Server("Principal Games", "http://www.roblox.com/asset/?id=6031075938")
+
+local yba = serv:Channel("YBA")
+
+local bf = serv:Channel("Blox Fruits")
+
+local af = serv:Channel("Anime Fighters")
+
+local serv = win:Server("Other Games", "")
+
+local babft = serv:Channel("BABFT")
+
+local serv = win:Server("Misc", "")
+
+local as = serv:Channel("Admin Scripts")
+
+local others = serv:Channel("Others")
+
+yba:Button("Kolgie GUI", function()
+DiscordLib:Notification("Notification", "The Script was executed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kolgie/YBA-GUI/main/yba-gui-obfuscated.lua"))()
+end)
+
+yba:Button("YBA cuz yes", function()
+DiscordLib:Notification("Notification", "The Script was executed!", "Okay!")
+loadstring(game:HttpGet"https://raw.githubusercontent.com/NukeVsCity/hackscript123/main/gui")()
+end)
+
+bf:Button("Depression GUI", function()
+DiscordLib:Notification("Notification", "The Script was executed!", "Okay!")
+loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+end)
+
+bf:Button("Strike Hub", function()
+DiscordLib:Notification("Notification", "The Script was executed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Strikehubv2z/StormSKz/main/All_in_one"))()
+end)
+
+af:Button("Zer0 Hub", function()
+DiscordLib:Notification("Notification", "The Script was executed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Discord0000/Zer0Hub/main/MainScript.lua"))()
+end)
+
+af:Button("KJ Hub", function()
+DiscordLib:Notification("Notification", "The Script was executed!", "Okay!")
+loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua"))()
+end)
+
+babft:Button("Vynixius GUI", function()
+DiscordLib:Notification("Notification", "The Script was executed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Build%20A%20Boat%20For%20Treasure/BABFT"))()
+end)
+
+babft:Button("Auto Farm GUI", function()
+DiscordLib:Notification("Notification", "The Script was executed!", "Okay!")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/BoaHacker/ROBLOX/main/Games/Build-A-Boat-For-Treasure', true))()
+end)
+
+as:Button("Infinite Yield", function()
+DiscordLib:Notification("Notification", "The Script was executed!", "Okay!")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+as:Button("CMD-X", function()
+DiscordLib:Notification("Notification", "The Script was executed!", "Okay!")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+
+others:Button("Auto Clicker", function()
+DiscordLib:Notification("Notification", "The Script was executed!", "Okay!")
+getgenv().Settings = {
+    ["Auto Click Keybind"] = "V", 
+    ["Lock Mouse Position Keybind"] = "B",
+    ["Right Click"] = false,
+    ["GUI"] = true,
+    ["Delay"] = 0 
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BimbusCoder/Script/main/Auto%20Clicker.lua"))()
+end)
+
+others:Button("Project: Bullshit (ESP)", function()
+DiscordLib:Notification("Notification", "The Script was executed!", "Okay!")
+loadstring(game:HttpGet("https://pastebin.com/raw/uw2P2fbY", true))()
+end)
+
+others:Button("Low Graphics (FPS Boost)", function()
+DiscordLib:Notification("Notification", "The Script was executed!", "Okay!")
+for _,v in pairs(workspace:GetDescendants()) do
+if v.ClassName == "Part"
+or v.ClassName == "SpawnLocation"
+or v.ClassName == "WedgePart"
+or v.ClassName == "Terrain"
+or v.ClassName == "MeshPart" then
+v.Material = "Plastic"
+end
+end
+end)
