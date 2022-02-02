@@ -2023,82 +2023,94 @@ function library:AddWindow(title, options)
 end
 
 do -- Example UI
-	local Window = library:AddWindow("Preview", {
-		main_color = Color3.fromRGB(41, 74, 122),
-		min_size = Vector2.new(500, 600),
+	local Window = library:AddWindow("Script Hub", {
+		main_color = Color3.fromRGB(136, 8, 8),
+		min_size = Vector2.new(400, 400),
 		toggle_key = Enum.KeyCode.RightShift,
 		can_resize = true,
 	})
-	local Tab = Window:AddTab("Tab 1")
+	local Tab = Window:AddTab("P. Games")
 
 	do -- Elements
-		Tab:AddLabel("Hello World!")
-
-		Tab:AddButton("Button", function()
-			print("Button clicked.")
+		local Folder = Tab:AddFolder("Your Bizarre Adventure") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddButton("Kolgie GUI", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/kolgie/YBA-GUI/main/yba-gui-obfuscated.lua"))()
 		end)
 
-		Tab:AddTextBox("TextBox", function(text)
-			print(text)
-		end, {
-			["clear"] = false, -- Default: true (options are optional)
-		})
-
-		local Switch = Tab:AddSwitch("Switch", function(bool)
-			print(bool)
-		end)
-		Switch:Set(true)
-
-		local Slider = Tab:AddSlider("Slider", function(x)
-			print(x)
-		end, { -- (options are optional)
-			["min"] = 0, -- Default: 0
-			["max"] = 100, -- Default: 100
-			["readonly"] = false, -- Default: false
-		})
-		Slider:Set(50)
-
-		Tab:AddKeybind("Keybind", function(key)
-			print(key)
-		end, { -- (options are optional)
-			["standard"] = Enum.KeyCode.RightShift -- Default: RightShift
-		})
-
-		local Dropdown = Tab:AddDropdown("Dropdown", function(object)
-			print(object)
-		end)
-		for i = 1, 9 do
-			Dropdown:Add(tostring(i))
-		end
-		local obj = Dropdown:Add("10")
-		obj:Remove()
-
-		local CP = Tab:AddColorPicker(function(color)
-			print(color)
-		end)
-		CP:Set(Color3.new(1, 0, 0))
-
-		local Console = Tab:AddConsole({
-			["y"] = 100,
-			["source"] = "Lua",
-		})
-		Console:Set("-- Gamer time!\nfor i = 1, 9 do \n    print(i)\nend")
-		print(Console:Get())
-
-		local HA = Tab:AddHorizontalAlignment()
-		HA:AddButton("Execute", function()
-			loadstring(Console:Get())()
-		end)
-		HA:AddButton("Clear", function()
-			Console:Set("")
+		Folder:AddButton("YBA cuz yes", function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/NukeVsCity/hackscript123/main/gui")()
 		end)
 
-		local Folder = Tab:AddFolder("Folder") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
-		Folder:AddLabel("Hello")
-		local Folder2 = Folder:AddFolder("?")
-		Folder2:AddLabel("Woo!")
+		local Folder = Tab:AddFolder("Pet Simulator X") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddButton("XTools", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Boxking776/GrubHub/main/free/PSXFree.lua"))()
+		end)
+
+		local Folder = Tab:AddFolder("Blox Fruits") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddButton("Depression X", function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+		end)
+
+		Folder:AddButton("Strike Hub v2", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Strikehubv2z/StormSKz/main/All_in_one"))()
+		end)
+
+		local Folder = Tab:AddFolder("Anime Fighters") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddButton("Zer0 Hub", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Discord0000/Zer0Hub/main/MainScript.lua"))()
+		end)
+
+		Folder:AddButton("KJ Hub", function()
+		loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua"))()
+		end)
 
 	end
+
+	local Tab = Window:AddTab("O. Games")
+
+		local Folder = Tab:AddFolder("Slayers Unleashed") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddButton("Stats Changer", function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/SlayersChanger'),true))()
+		end)
+
+		local Folder = Tab:AddFolder("Build a Boat for Treasure") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddButton("Vynixius GUI", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Build%20A%20Boat%20For%20Treasure/BABFT"))()
+		end)
+
+		Folder:AddButton("Auto Farm GUI", function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/BoaHacker/ROBLOX/main/Games/Build-A-Boat-For-Treasure', true))()
+		end)
+
+	local Tab = Window:AddTab("Misc")
+
+		local Folder = Tab:AddFolder("Admin Script") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddButton("Infinite Yield", function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+		end)
+
+		Folder:AddButton("CMD-X", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+		end)
+
+		local Folder = Tab:AddFolder("Others") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddButton("ESP", function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/uw2P2fbY", true))()
+		end)
+
+
+
+		Folder:AddButton("FPS Boost", function()
+for _,v in pairs(workspace:GetDescendants()) do
+if v.ClassName == "Part"
+or v.ClassName == "SpawnLocation"
+or v.ClassName == "WedgePart"
+or v.ClassName == "Terrain"
+or v.ClassName == "MeshPart" then
+v.Material = "Plastic"
+end
+end
+		end)
 
 	Tab:Show()
 	library:FormatWindows()
