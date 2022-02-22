@@ -2032,6 +2032,15 @@ do -- Example UI
 	local Tab = Window:AddTab("P. Games")
 
 	do -- Elements
+		local Folder = Tab:AddFolder("Critical Legends") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddButton("Critical Legends GUI 1", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Rykyy/roblox/scripts/CriticalLegends.lua"))()
+		end)
+
+		Folder:AddButton("Critical Legends GUI 2", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/AimikaHub/CL/main/CriticalLegendsBeta",true))()
+		end)
+
 		local Folder = Tab:AddFolder("Your Bizarre Adventure") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
 		Folder:AddButton("YBA Sucks Ass", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Tobias020108Back/YBA-AUT/main/YBA-GUI-Rewrite.lua"))()
