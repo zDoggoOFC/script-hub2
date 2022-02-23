@@ -2136,19 +2136,11 @@ do -- Example UI
 		loadstring(game:HttpGet("https://pastebin.com/raw/uw2P2fbY", true))()
 		end)
 
-
-
-		Folder:AddButton("FPS Boost", function()
-for _,v in pairs(workspace:GetDescendants()) do
-if v.ClassName == "Part"
-or v.ClassName == "SpawnLocation"
-or v.ClassName == "WedgePart"
-or v.ClassName == "Terrain"
-or v.ClassName == "MeshPart" then
-v.Material = "Plastic"
-end
-end
+		local Folder = Tab:AddFolder("Dev") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddButton("Remote Spy", function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/c12tidMB"))()
 		end)
+		
 
 	Tab:Show()
 	library:FormatWindows()
