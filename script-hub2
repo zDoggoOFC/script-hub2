@@ -2032,6 +2032,24 @@ do -- Example UI
 	local Tab = Window:AddTab("P. Games")
 
 	do -- Elements
+		local Folder = Tab:AddFolder("Anime Fighters") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddButton("Zer0 Hub", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Discord0000/Zer0Hub/main/MainScript.lua"))()
+		end)
+
+		Folder:AddButton("KJ Hub", function()
+		loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua"))()
+		end)
+
+		local Folder = Tab:AddFolder("Blox Fruits") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddButton("Depression X", function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+		end)
+
+		Folder:AddButton("Strike Hub v2", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Strikehubv2z/StormSKz/main/All_in_one"))()
+		end)
+
 		local Folder = Tab:AddFolder("Critical Legends") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
 		Folder:AddButton("Critical Legends GUI 1", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Rykyy/roblox/scripts/CriticalLegends.lua"))()
@@ -2039,6 +2057,21 @@ do -- Example UI
 
 		Folder:AddButton("Critical Legends GUI 2", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/AimikaHub/CL/main/CriticalLegendsBeta",true))()
+		end)
+
+		local Folder = Tab:AddFolder("Shindo Life") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddButton("V.G. Hub", function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+		end)
+
+
+		Folder:AddButton("Bloodline Changer", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/zDoggoOFC/e/main/e"))()
+		end)
+
+		local Folder = Tab:AddFolder("Pet Simulator X") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddButton("Ghost Hub", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/GhostHub-PetSimX.lua"))()
 		end)
 
 		local Folder = Tab:AddFolder("Your Bizarre Adventure") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
@@ -2054,34 +2087,6 @@ do -- Example UI
         loadstring(game:HttpGet("https://raw.githubusercontent.com/kolgie/YBA-GUI/main/yba-gui-obfuscated.lua"))()
 		end)
 
-		local Folder = Tab:AddFolder("Pet Simulator X") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
-		Folder:AddButton("XTools", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Boxking776/GrubHub/main/free/PSXFree.lua"))()
-		end)
-
-		local Folder = Tab:AddFolder("Blox Fruits") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
-		Folder:AddButton("Depression X", function()
-		loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
-		end)
-
-		Folder:AddButton("Strike Hub v2", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Strikehubv2z/StormSKz/main/All_in_one"))()
-		end)
-
-		local Folder = Tab:AddFolder("Shindo Life") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
-		Folder:AddButton("Solaris", function()
-		loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
-		end)
-
-		local Folder = Tab:AddFolder("Anime Fighters") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
-		Folder:AddButton("Zer0 Hub", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Discord0000/Zer0Hub/main/MainScript.lua"))()
-		end)
-
-		Folder:AddButton("KJ Hub", function()
-		loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua"))()
-		end)
-
 	end
 
 	local Tab = Window:AddTab("O. Games")
@@ -2089,6 +2094,11 @@ do -- Example UI
         local Folder = Tab:AddFolder("Bee Swarm Simulator") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
 		Folder:AddButton("Kocmoc", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/not-weuz/Lua/main/kocmoc.lua"))()
+		end)
+
+		local Folder = Tab:AddFolder("Build a Boat for Treasure") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddButton("Vynixius GUI", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Build%20A%20Boat%20For%20Treasure/BABFT"))()
 		end)
 
         local Folder = Tab:AddFolder("Demon Fall") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
@@ -2101,28 +2111,23 @@ do -- Example UI
 	        loadstring(game:HttpGet("https://raw.githubusercontent.com/10x00/Public-Scripts/main/Reaper%202.lua"))();
 		end)
 
+		local Folder = Tab:AddFolder("Slayers Unleashed") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddButton("Stats Changer", function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/SlayersChanger'),true))()
+		end)
+
         local Folder = Tab:AddFolder("Stands Awakening") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
 		Folder:AddButton("Bepo Gui", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/StandAwekening.lua"))()
-		end)
-
-		local Folder = Tab:AddFolder("Build a Boat for Treasure") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
-		Folder:AddButton("Vynixius GUI", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Build%20A%20Boat%20For%20Treasure/BABFT"))()
 		end)
 
 		Folder:AddButton("Auto Farm GUI", function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/BoaHacker/ROBLOX/main/Games/Build-A-Boat-For-Treasure', true))()
 		end)
 
-		local Folder = Tab:AddFolder("Slayers Unleashed") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
-		Folder:AddButton("Stats Changer", function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/SlayersChanger'),true))()
-		end)
-
 	local Tab = Window:AddTab("Misc")
 
-		local Folder = Tab:AddFolder("Admin Script") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		local Folder = Tab:AddFolder("Admin Scripts") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
 		Folder:AddButton("Infinite Yield", function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 		end)
