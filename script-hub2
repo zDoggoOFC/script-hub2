@@ -2032,6 +2032,13 @@ do -- Example UI
 	local Tab = Window:AddTab("P. Games")
 
 	do -- Elements
+		local Folder = Tab:AddFolder("All Star Tower Defense") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
+		Folder:AddButton("River Hub", function()
+			pcall(function()
+			   loadstring(game:HttpGet("http://riverhub.xyz/" .. tostring(game.PlaceId) .. ".lua"))()
+			end)
+		end)	
+	
 		local Folder = Tab:AddFolder("Anime Fighters") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
 		Folder:AddButton("Zer0 Hub", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Discord0000/Zer0Hub/main/MainScript.lua"))()
