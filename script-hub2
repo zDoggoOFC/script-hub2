@@ -2024,7 +2024,7 @@ end
 
 do -- Example UI
 	local Window = library:AddWindow("Script Hub", {
-		main_color = Color3.fromRGB(136, 8, 8),
+		main_color = Color3.fromRGB(0, 158, 148),
 		min_size = Vector2.new(525, 550),
 		toggle_key = Enum.KeyCode.RightShift,
 		can_resize = true,
