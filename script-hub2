@@ -2080,6 +2080,10 @@ do -- Example UI
 		Folder:AddButton("Void Hub", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Wind596/VoidHub/main/WiningDediy", true))()
 		end)
+		
+		Folder:AddButton("Ghost Hub", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptRUs/Ryans/main/GhostHub-PetSimX.lua"))()
+		end)		
 
 		local Folder = Tab:AddFolder("Your Bizarre Adventure") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
 		Folder:AddButton("YBA Sucks Ass", function()
