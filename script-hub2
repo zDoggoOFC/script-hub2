@@ -2049,12 +2049,12 @@ do -- Example UI
 		end)
 
 		local Folder = Tab:AddFolder("Blox Fruits") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
-		Folder:AddButton("Depression X", function()
-		loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+		Folder:AddButton("Ren Hub", function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/bloxfruit/main/free'))()
 		end)
 
-		Folder:AddButton("Strike Hub v2", function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Strikehubv2z/StormSKz/main/All_in_one"))()
+		Folder:AddButton("Depression X", function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
 		end)
 
 		local Folder = Tab:AddFolder("Critical Legends") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
