@@ -2053,8 +2053,8 @@ do -- Example UI
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/bloxfruit/main/free'))()
 		end)
 
-		Folder:AddButton("Depression X", function()
-		loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+		Folder:AddButton("Mukuro", function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
 		end)
 
 		local Folder = Tab:AddFolder("Critical Legends") -- This can contain exactly the same as a Tab. You can have as many folders as you'd like to.
